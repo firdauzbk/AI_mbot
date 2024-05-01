@@ -19,4 +19,5 @@ A_m uses image image processing, computer vision and object detection algorithm 
 
 # Credits
 [Ultralytics - YOLOv8](https://docs.ultralytics.com/usage/python/)
+
 [OpenCV](https://opencv.org/)
