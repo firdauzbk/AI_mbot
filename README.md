@@ -11,8 +11,7 @@ A_m uses image image processing, computer vision and object detection algorithm 
 
 ## Introduction
 ### Model Training - Theory
-![t](https://github.com/firdauzbk/AI_mbot/assets/100037523/603ecc3e-efaa-40c1-aacd-5673b2511b37)
-![ct](https://github.com/firdauzbk/AI_mbot/assets/100037523/2103c72b-d6fd-4f34-a2f4-2314f22d4cce)
+![t](https://github.com/firdauzbk/AI_mbot/assets/100037523/603ecc3e-efaa-40c1-aacd-5673b2511b37) ![ct](https://github.com/firdauzbk/AI_mbot/assets/100037523/2103c72b-d6fd-4f34-a2f4-2314f22d4cce)
 
 
 
