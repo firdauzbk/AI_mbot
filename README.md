@@ -2,7 +2,7 @@
 Non-intrusive aimbot
 
 ## Brief Summary
-A_m uses image image processing, computer vision and object detection algorithm to identify game models in-game in realtime.
+A_m uses image image processing, computer vision and object detection algorithm to identify in-game models in realtime.
 ### Libraries
 #### - YOLOv8
 #### - OpenCV
