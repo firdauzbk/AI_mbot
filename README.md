@@ -5,9 +5,24 @@ Non-intrusive aimbot
 A_m uses image image processing, computer vision and object detection algorithm to identify in-game models in realtime.
 ### Libraries
 #### - YOLOv8
-#### - OpenCV
-### Models
-#### - ???
+#### - OpenCV 
+
+### Models (Step-by-step)
+#### - Data Collection: Gather different random screenshots
+#### - Data annotation through CVAT for object detection
+#### - Train data in YOLOv8
+
+## Pre-requisite
+### Important libraries required, __very important!__
+1. NVIDIA graphic card(s) with CUDA support
+1. Python
+2. OpenCV with CUDA
+   - DO NOT USE pip library, use CMAKE to build OpenCV with CUDA!
+   - Refernces: [**Quick and Easy OpenCV Python Installation with Cuda GPU in Under 10 Minutes**](https://www.youtube.com/watch?v=d8Jx6zO1yw0&t=475s&pp=ygUQb3BlbmN2IHdpdGggY3VkYQ%3D%3D)
+   
+
+  
+
 
 ## Introduction
 ### Model Training - Theory
