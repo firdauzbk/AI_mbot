@@ -15,18 +15,15 @@ A_m uses image image processing, computer vision and object detection algorithm 
 ## Pre-requisite
 ### Important libraries required, __very important!__
 1. NVIDIA graphic card(s) with CUDA support
-1. Python
+1. Python 3.x
 2. OpenCV with CUDA
    - DO NOT USE pip library, use CMAKE to build OpenCV with CUDA!
    - Refernces: [**Quick and Easy OpenCV Python Installation with Cuda GPU in Under 10 Minutes**](https://www.youtube.com/watch?v=d8Jx6zO1yw0&t=475s&pp=ygUQb3BlbmN2IHdpdGggY3VkYQ%3D%3D)
-   
-
-  
-
 
 ## Introduction
-### Model Training - Theory
-![t](https://github.com/firdauzbk/AI_mbot/assets/100037523/603ecc3e-efaa-40c1-aacd-5673b2511b37) ![ct](https://github.com/firdauzbk/AI_mbot/assets/100037523/2103c72b-d6fd-4f34-a2f4-2314f22d4cce)
+### Dataset
+<!-- ![t](https://github.com/firdauzbk/AI_mbot/assets/100037523/603ecc3e-efaa-40c1-aacd-5673b2511b37) ![ct](https://github.com/firdauzbk/AI_mbot/assets/100037523/2103c72b-d6fd-4f34-a2f4-2314f22d4cce) -->
+### Data annotation (categorisation)
 
 
 
