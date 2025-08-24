@@ -42,7 +42,7 @@ It includes a custom GUI built with Tkinter for configuring **keybinds, aimbot s
 
 ---
 
-## 📦 Installation
+## Installation
 ### Pre-requisites
 1. NVIDIA GPU with CUDA support  
 2. Python 3.9+ recommended  
