@@ -32,3 +32,5 @@ A_m uses image image processing, computer vision and object detection algorithm 
 [Ultralytics - YOLOv8](https://docs.ultralytics.com/usage/python/)
 
 [OpenCV](https://opencv.org/)
+
+[CS2-Object-Detection by Vombit](https://huggingface.co/Vombit/yolov8n_cs2)
