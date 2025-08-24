@@ -2,14 +2,37 @@ import tkinter as tk
 from tkinter import ttk
 from utility.detection import run_detection
 from library.keys import set_key, keybinds
+import cv2
 
 class lolGUI:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("0Dx")
-        self.root.geometry("600x400")
+        self.root.geometry("600x460")
         self.root.configure(bg='#2b2b2b')
-        
+
+        # check cv2 cuda
+        try:
+            check = cv2.cuda.getCudaEnabledDeviceCount()
+            if check > 0:
+                status_text = "OpenCV GPU CUDA is enabled"
+                status_color = "#4CAF50"
+            else:
+                status_text = "OpenCV GPU CUDA is disabled"
+                status_color = "#FFA500"
+        except Exception:
+            status_text = "OpenCV built without CUDA support"
+            status_color = "#FFA500"
+
+        self.status_label = tk.Label(
+            self.root,
+            text=status_text,
+            fg=status_color,
+            bg='#2b2b2b',
+            font=('Arial', 10, 'bold')
+        )
+        self.status_label.pack(pady=(5, 0))  # top margin
+
         self.setup_styles()
         
         main_frame = tk.Frame(self.root, bg='#2b2b2b')
