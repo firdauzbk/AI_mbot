@@ -45,6 +45,7 @@ class lolGUI:
         self.create_config_tab()
         self.create_aimbot_tab()
         self.create_triggerbot_tab()
+        self.create_misc_tab()
         
         # Bottom buttons
         button_frame = tk.Frame(main_frame, bg='#2b2b2b')
@@ -151,6 +152,22 @@ class lolGUI:
         tk.Scale(delay_frame, from_=0, to=500, orient='horizontal',
                  variable=self.delay_var, bg='#3a3a3a', fg='white',
                  highlightthickness=0, troughcolor='#4a4a4a').pack(side='right', fill='x', expand=True, padx=(10, 0))
+    
+    def create_misc_tab(self):
+        misc_frame = ttk.Frame(self.notebook, style='Dark.TFrame')
+        self.notebook.add(misc_frame, text='Misc')
+
+        tk.Label(misc_frame, text="Miscellaneous Settings",
+                 font=('Arial', 16, 'bold'), fg='white', bg='#2b2b2b').pack(pady=(20, 20))
+
+        settings_frame = ttk.Frame(misc_frame, style='Card.TFrame')
+        settings_frame.pack(fill='x', padx=20, pady=10)
+
+        self.debug_mode = tk.BooleanVar(value=False)
+        debug_cb = tk.Checkbutton(settings_frame, text="Enable Debug Window",
+                                  variable=self.debug_mode, fg='white', bg='#3a3a3a',
+                                  font=('Arial', 11), selectcolor='#4a4a4a')
+        debug_cb.pack(anchor='w', padx=15, pady=10)
 
     def save_keys(self):
         for action, entry in self.entries.items():
@@ -167,7 +184,9 @@ class lolGUI:
     def start_detection(self):
         fov = self.fov_var.get() if hasattr(self, "fov_var") else 90
         smooth = self.smooth_var.get() if hasattr(self, "smooth_var") else 5
-        run_detection(fov=fov, smooth=smooth)
+        debug = self.debug_mode.get() if hasattr(self, "debug_mode") else False
+
+        run_detection(fov=fov, smooth=smooth, debug=debug)
 
 def start_gui():
     app = lolGUI()
