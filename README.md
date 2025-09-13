@@ -4,12 +4,13 @@ Non-intrusive aimbot (research / proof-of-concept)
 ## Screenshots
 
 ### In-game Detection  
-![Detection Example 1](media/detection1.png)  
-![Detection Example 2](media/detection2.jpg)
+<img src="media/ingame_1.PNG" alt="Detection Example 1" width="400">  
+<img src="media/ingame_2.png" alt="Detection Example 2" width="400">  
 
 ### GUI  
-![GUI Main](media/gui_main.png)  
-![Keybind Editor](media/keybinds.png)
+<img src="media/gui_1.PNG" alt="GUI Main" width="400">  
+<img src="media/gui_2.PNG" alt="Keybind Editor" width="400">  
+<img src="media/gui_3.PNG" alt="Additional GUI View" width="400">  
 
 ## Brief Summary
 A_m uses **image processing**, **computer vision**, and a **YOLOv8 object detection model** to identify in-game models in real time.  
