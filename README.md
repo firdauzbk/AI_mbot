@@ -1,6 +1,16 @@
 # AI_mbot (A_m)
 Non-intrusive aimbot (research / proof-of-concept)
 
+## Screenshots
+
+### In-game Detection  
+![Detection Example 1](media/detection1.png)  
+![Detection Example 2](media/detection2.jpg)
+
+### GUI  
+![GUI Main](media/gui_main.png)  
+![Keybind Editor](media/keybinds.png)
+
 ## Brief Summary
 A_m uses **image processing**, **computer vision**, and a **YOLOv8 object detection model** to identify in-game models in real time.  
 It includes a custom GUI built with Tkinter for configuring **keybinds, aimbot settings (FOV & smoothing), and triggerbot delay**.
